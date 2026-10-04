@@ -1,4 +1,3 @@
-```tsx
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
@@ -54,7 +53,6 @@ export default function RootLayout({
           content="cAQQOU0FM9D1YC2gqlz0prLrAuA4Pv2UgYpGjMlA7aQ"
         />
       </head>
-
       <body className="min-h-screen">
         <a
           href="#main"
@@ -62,11 +60,9 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-
         <Header />
         <main id="main">{children}</main>
         <Footer />
-
         {SITE.gaId && (
           <>
             <Script
@@ -74,5 +70,11 @@ export default function RootLayout({
               strategy="afterInteractive"
             />
             <Script id="ga" strategy="afterInteractive">
-              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',
-```
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${SITE.gaId}',{anonymize_ip:true});`}
+            </Script>
+          </>
+        )}
+      </body>
+    </html>
+  );
+}
