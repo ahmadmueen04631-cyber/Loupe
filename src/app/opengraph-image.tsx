@@ -16,7 +16,7 @@ export default function Image() {
           <div style={{ width: 84, height: 84, borderRadius: 9999, border: "7px solid #eceef3", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div style={{ width: 32, height: 32, borderRadius: 10, background: "#8592ff" }} />
           </div>
-          <div style={{ fontSize: 88, fontWeight: 700, letterSpacing: -3, display: "flex" }}>Loupe</div>
+          <div style={{ fontSize: 88, fontWeight: 700, letterSpacing: -3, display: "flex" }}>PicFix</div>
         </div>
         <div style={{ marginTop: 28, fontSize: 34, color: "#9aa2b1", display: "flex" }}>Fast, simple image tools for everyone.</div>
       </div>

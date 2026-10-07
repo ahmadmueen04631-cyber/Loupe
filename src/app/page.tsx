@@ -78,7 +78,7 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-6xl gap-12 px-5 py-16 lg:grid-cols-2">
         <div>
-          <h2 className="font-display text-3xl font-semibold tracking-tight">Why people use Loupe</h2>
+          <h2 className="font-display text-3xl font-semibold tracking-tight">Why people use PicFix</h2>
           <dl className="mt-8 space-y-6">
             {benefits.map(([t, d]) => (<div key={t}><dt className="font-medium">{t}</dt><dd className="mt-1 text-muted">{d}</dd></div>))}
           </dl>
