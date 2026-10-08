@@ -50,7 +50,7 @@ export default function RootLayout({
         />
         <meta
           name="google-site-verification"
-          content="cAQQOU0FM9D1YC2gqlz0prLrAuA4Pv2UgYpGjMlA7aQ"
+          content="7tdj4hXcJ83KkP84yjg-Pw8QSnt2Ax0j671WYAt7"
         />
       </head>
       <body className="min-h-screen">
