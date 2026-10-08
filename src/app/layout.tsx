@@ -45,14 +45,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta
+          name="google-site-verification"
+          content="7tdj4hXcJ83KkP84yjg-Pw8QSnt2Ax0j671WYAt7_-o"
+        />
         <script
           dangerouslySetInnerHTML={{ __html: themeScript }}
         />
-        <meta
-          name="google-site-verification"
-          content="7tdj4hXcJ83KkP84yjg-Pw8QSnt2Ax0j671WYAt7"
-        />
       </head>
+
       <body className="min-h-screen">
         <a
           href="#main"
@@ -60,15 +61,20 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+
         <Header />
+
         <main id="main">{children}</main>
+
         <Footer />
+
         {SITE.gaId && (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`}
               strategy="afterInteractive"
             />
+
             <Script id="ga" strategy="afterInteractive">
               {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${SITE.gaId}',{anonymize_ip:true});`}
             </Script>
