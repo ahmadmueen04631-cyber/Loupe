@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SITE } from "@/lib/seo/site";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -80,6 +81,8 @@ export default function RootLayout({
             </Script>
           </>
         )}
+
+        <Analytics />
       </body>
     </html>
   );
